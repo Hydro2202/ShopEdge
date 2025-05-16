@@ -40,10 +40,6 @@ header .nav-center a:hover {
   color: #555;
 }
 
-header, header a {
-  -webkit-text-fill-color: #000000 !important;
-  color: #000000 !important;
-}
 
 
 
