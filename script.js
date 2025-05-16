@@ -15,7 +15,7 @@ function updateActiveImage() {
   });
 }
 
-//MAIN- move to the left
+//MAIN------------------------------------ move to the left
 function moveCarousel() {
   currentIndex = (currentIndex + 1) % slides.length;
   const offset = currentIndex * -100;
@@ -25,6 +25,16 @@ function moveCarousel() {
 
 updateActiveImage();
 setInterval(moveCarousel, 3000);
+
+// --------------------------------------------------------- MAIN- button shop now to the products
+document.querySelectorAll('.categories button').forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.textContent.toLowerCase();
+    window.location.href = `products.html?category=${category}`;
+  });
+});
+
+
 
 // --------------------------------------------------------- PRODUCT-Fetch Product Data Section
 const productsList = document.getElementById('products-list');
@@ -38,7 +48,7 @@ const fetchProducts = async () => {
     const response = await fetch(`https://fakestoreapi.com/products${category ? `?category=${category}` : ''}`);  // Fetch from API
     const products = await response.json();
 
-    productsList.innerHTML = ''; // Clear 
+    productsList.innerHTML = ''; 
 
     products.forEach(product => {
       const productDiv = document.createElement('div');
@@ -166,7 +176,7 @@ function checkout() {
   if (cart.length === 0) {
     alert("Cart is empty.");
   } else {
-    alert("Sure ka na?");
+    alert("Are you sure?");
 
     localStorage.removeItem('cart'); 
     displayCart();  
@@ -186,10 +196,4 @@ if (document.getElementById('cart-list')) {
   displayCart(); 
 }
 
-// --------------------------------------------------------- MAIN- button to the products
-document.querySelectorAll('.categories button').forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.textContent.toLowerCase();
-    window.location.href = `products.html?category=${category}`;
-  });
-});
+
