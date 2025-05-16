@@ -11,7 +11,7 @@ body {
 /* ---------------------Header styling ----------------*/
 header {
   
-
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,16 +31,17 @@ header .nav-center {
 }
 
 header .nav-center a {
-  color: #0000;
+  color: #000000;
   font-size: larger;
   text-decoration: none;
 }
 
 header .nav-center a:hover {
   text-decoration: underline;
+  color: #555;
 }
 
-background-color: #ffffff;
+
 
 
 /*--------------------------------- Cart icon hover effect ----------------------------*/
