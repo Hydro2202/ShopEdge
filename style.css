@@ -10,7 +10,7 @@ body {
 
 /* ---------------------Header styling ----------------*/
 header {
-  background-color: #ffffff;
+  
 
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@ header .nav-center {
 }
 
 header .nav-center a {
-  color: #FFFFF;
+  color: #0000;
   font-size: larger;
   text-decoration: none;
 }
@@ -39,6 +39,9 @@ header .nav-center a {
 header .nav-center a:hover {
   text-decoration: underline;
 }
+
+background-color: #ffffff;
+
 
 /*--------------------------------- Cart icon hover effect ----------------------------*/
 header .cart-icon {
