@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  -webkit-text-fill-color:#ffffff;
   background-color:#000000;
 }
 
@@ -41,6 +40,10 @@ header .nav-center a:hover {
   color: #555;
 }
 
+header, header a {
+  -webkit-text-fill-color: #000000 !important;
+  color: #000000 !important;
+}
 
 
 
