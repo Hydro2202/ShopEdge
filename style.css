@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  color: #ffffff;
   background-color:#000000;
 }
 
@@ -40,6 +41,9 @@ header .nav-center a:hover {
   color: #555;
 }
 
+header, header a {
+  color: #000000;
+}
 
 
 
